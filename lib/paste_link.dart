@@ -38,34 +38,33 @@ body: Container(
       GestureDetector(
 
         onTap:  ()  {
-if (  textController.text.isEmpty){
-  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("No link pastes  ")  ));
+      if (  textController.text.isEmpty)
+      { ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("No link pastes  ")  ));
       //  20 minit
-}
+      }
 
-else {
-  //  Downlode the video
-// Download ().downloadVideo(textController.text.trim() , " youtube Downloader "  );
+      else {
+  //   Downlode the video
+//     Download ().downloadVideo(textController.text.trim() , " youtube Downloader "  );
 
 
-}
-        },
+       }
+       },
 
 
         child:  Container   (
           alignment:  Alignment.center,
-margin: const   EdgeInsets.only(top:20)    ,
+          margin: const   EdgeInsets.only(top:20)    ,
           color: Colors.grey ,
           padding: const  EdgeInsets.all(20)  ,
           width:  MediaQuery.of(context).size.width,
-
           child:  Text  ( "  Downlode  Video "  ,
           style:  TextStyle( color:  Colors.blue, fontSize: 20)   ,
 
 
           ),
-        ),
-      )
+         ),
+         )
 
 
     ],
